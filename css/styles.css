@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f2;
-    color: #333;  /* Dark gray for main content text */
+    color: #333;  
     line-height: 1.6;
 }
 
@@ -17,15 +17,15 @@ body {
 }
 
 header, footer {
-    background-color: #2a2a2a;  /* Dark background for header & footer */
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    background-color: #2a2a2a;
+    color: #f4f4f2;
     padding: 20px 0;
 }
 
 header h1, footer p {
     font-weight: bold;
     margin: 0;
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    color: #f4f4f2;
 }
 
 nav {
@@ -35,7 +35,7 @@ nav {
 }
 
 nav a {
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    color: #f4f4f2;
     text-decoration: none;
     margin: 0 15px;
     padding: 5px 15px;
@@ -44,31 +44,23 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #444;  /* Slightly lighter gray for hover */
+    background-color: #444;
     color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    color: #1e1e1e;  /* Keeping headers a dark gray */
-}
-
-.footer-about h3, .footer-social h3 {
-    color: #f4f4f2; 
-    font-weight: 700; 
-    font-size: 1.2em; 
-    text-transform: uppercase; 
-    margin-bottom: 10px; 
+    color: #1e1e1e;
 }
 
 .footer-social a {
-    color: #ffffff; 
+    color: #f4f4f2;
     text-decoration: none;
-    transition: color 0.3s;
+    margin-right: 10px;
 }
 
 .footer-social a:hover {
-    color: #f4f4f2;
+    color: #f1c40f;
 }
 
 @media (max-width: 768px) {
@@ -79,5 +71,28 @@ h1, h2, h3, h4, h5, h6 {
 
     nav a {
         margin: 5px 0;
+    }
+
+    .hero h2, .hero p {
+        text-align: center;
+    }
+}
+
+/* If the screen size is 480 pixels or less, make some further adjustments */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Decrease the font size for the main title */
+    }
+    
+    nav {
+        padding: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.4em; /* Adjusting the hero section heading */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjusting the hero section paragraph */
     }
 }
