@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f2;
+    color: #333;  /* Dark gray for main content text */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: #2a2a2a;  /* Dark background for header & footer */
+    color: #f4f4f2;  /* Light color to contrast the dark background */
+    padding: 20px 0;
+}
+
+header h1, footer p {
+    font-weight: bold;
+    margin: 0;
+    color: #f4f4f2;  /* Light color to contrast the dark background */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #f4f4f2;  /* Light color to contrast the dark background */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;  /* Slightly lighter gray for hover */
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1e1e1e;  /* Keeping headers a dark gray */
+}
+
+.footer-about h3, .footer-social h3 {
+    color: #f4f4f2; 
+    font-weight: 700; 
+    font-size: 1.2em; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+}
+
+.footer-social a {
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #f4f4f2;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
