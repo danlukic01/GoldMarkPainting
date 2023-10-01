@@ -32,6 +32,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allows wrapping onto next line */
 }
 
 nav a {
@@ -63,10 +64,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #f1c40f;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start; /* Aligns items to the left */
     }
 
     nav a {
@@ -76,12 +78,16 @@ h1, h2, h3, h4, h5, h6 {
     .hero h2, .hero p {
         text-align: center;
     }
+
+    img {
+        max-width: 100%; /* Ensures images don't overflow their container */
+    }
 }
 
-/* If the screen size is 480 pixels or less, make some further adjustments */
+/* Further adjustments for very small screens */
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.5em; /* Decrease the font size for the main title */
+        font-size: 1.5em;
     }
     
     nav {
@@ -89,10 +95,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero h2 {
-        font-size: 1.4em; /* Adjusting the hero section heading */
+        font-size: 1.4em;
     }
 
     .hero p {
-        font-size: 1em; /* Adjusting the hero section paragraph */
+        font-size: 1em;
+    }
+
+    /* Portfolio Page Image Adjustments */
+    .service {
+        width: 100%; /* Forces images to occupy full width on smaller screens */
     }
 }
