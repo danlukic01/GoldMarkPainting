@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f2;
-    color: #333;  /* Dark gray for main content text */
+    color: #333;
     line-height: 1.6;
 }
 
@@ -17,15 +17,15 @@ body {
 }
 
 header, footer {
-    background-color: #2a2a2a;  /* Dark background for header & footer */
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    background-color: #2a2a2a;
+    color: #f4f4f2;
     padding: 20px 0;
 }
 
 header h1, footer p {
     font-weight: bold;
     margin: 0;
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    color: #f4f4f2;
 }
 
 nav {
@@ -35,7 +35,7 @@ nav {
 }
 
 nav a {
-    color: #f4f4f2;  /* Light color to contrast the dark background */
+    color: #f4f4f2;
     text-decoration: none;
     margin: 0 15px;
     padding: 5px 15px;
@@ -44,44 +44,41 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #444;  /* Slightly lighter gray for hover */
+    background-color: #444;
     color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    color: #1e1e1e;  /* Keeping headers a dark gray */
+    color: #1e1e1e;
 }
 
 .footer-about h3, .footer-social h3 {
-    color: #f4f4f2; /* Light color for the text */
-    font-weight: 700; /* Bold font weight */
-    font-size: 1.2em; /* Increase font size */
-    text-transform: uppercase; /* Make text uppercase for added emphasis */
-    margin-bottom: 10px; /* Some space below the headings */
+    color: #f4f4f2;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .footer-social a {
-    color: #f4f4f2; /* Adjusted to a light color for visibility against dark background */
-    margin-right: 10px; /* Added spacing between links */
+    color: #f4f4f2;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        align-items: flex-start; /* Aligns items to the left */
-        text-align: left;       /* Aligns text to the left */
+        text-align: center;
     }
 
     nav a {
         display: block;
         margin: 5px 0;
-        padding: 10px 0;       /* Removed horizontal padding for a more flush left alignment */
-    }
-
-    .portfolio-img img {
-        width: 100%;
-        max-width: 100%;
     }
 }
-
