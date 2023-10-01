@@ -31,6 +31,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -58,10 +59,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+.portfolio-grid img {
+    max-width: 100%; /* Ensures images don't overflow their container */
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start; /* Aligns items to the top */
     }
 
     nav a {
@@ -69,6 +74,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Adjusts to single column layout for mobile */
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center the images */
     }
 }
